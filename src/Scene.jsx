@@ -9,7 +9,7 @@ export function Scene() {
     return (
         <Suspense fallback={null}>
             <Environment
-                files={'process.env.PUBLIC_URL + /textures/envmap.hdr'}
+                files={process.env.PUBLIC_URL + "/textures/envmap.hdr"}
                 background={"both"}
             />
         
