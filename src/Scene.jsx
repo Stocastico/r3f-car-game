@@ -4,6 +4,7 @@ import {
     PerspectiveCamera
 } from "@react-three/drei";
 import { Suspense } from "react";
+import { Track } from "./Track";
 
 export function Scene() {
     return (
@@ -15,6 +16,8 @@ export function Scene() {
         
             <PerspectiveCamera makeDefault position={[-6, 3.9, 6.2]} fov={40}/>
             <OrbitControls target={[-2.6, -0.7, 0]}/>
+
+            <Track />
         </Suspense>
     );
 }
